@@ -10,6 +10,8 @@ import { Greet } from './compoents/Greet';
 import { Button } from './compoents/Button';
 import  {Inputt}  from './compoents/Inputt'
 import { Container } from './compoents/Container';
+import { Loggedin } from './Loggedin';
+import { Loggedins } from './compoents/LoggedIns';
 
 
 function App(): JSX.Element {
@@ -31,6 +33,8 @@ function App(): JSX.Element {
       <Button handleClick={handleClick}/>
       <Inputt value='' handleChange={(event)=>console.log(event)}/>
       <Container styles={{color:"red", padding:"1rem", width:"20px", backgroundColor:"yellow"}}/>
+      <Loggedin/>
+      <Loggedins />
     </div>
   );
 }
